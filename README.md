@@ -1,67 +1,51 @@
 Sudoku Solver
-Overview
-A C++-based Sudoku Solver for 9x9 puzzles, utilizing a backtracking algorithm to solve puzzles efficiently. Features include random puzzle generation with adjustable difficulty (Easy: 30–40 zeros, Hard: 45–55 zeros) and manual input with validation. The program ensures unique solutions and handles edge cases like unsolvable grids, demonstrating proficiency in C++ and algorithmic problem-solving.
-Features
+Project Overview
+A robust C++ application that solves 9x9 Sudoku puzzles using an optimized backtracking algorithm. It features random puzzle generation with adjustable difficulty (Easy: 30–40 empty cells, Hard: 45–55 empty cells) and manual input with validation. Built with object-oriented principles, the solver ensures unique solutions and handles edge cases, showcasing advanced C++ programming and algorithmic problem-solving skills.
+Key Features
 
-Solves 9x9 Sudoku puzzles in under 2 seconds using backtracking.
-Generates random puzzles with user-defined difficulty.
-Supports manual puzzle input with validation (0–9).
-Ensures unique solutions via solution counting.
-Modular design using OOP (inheritance, polymorphism) and STL (vectors, algorithms).
-Tested on 100+ puzzles for 100% accuracy.
+Solves puzzles in <2 seconds with 100% accuracy across 100+ test cases.
+Generates random puzzles with guaranteed unique solutions.
+Supports manual input with robust validation (0–9).
+Uses OOP (inheritance, polymorphism) and STL for modularity and efficiency.
+Displays initial and solved puzzles in a clear console format.
 
-Requirements
+Technologies
 
-C++ compiler (e.g., g++ with C++11 or later).
-Standard libraries: <iostream>, <vector>, <algorithm>, <cstdlib>, <ctime>.
+Language: C++ (C++11 or later)
+Libraries: <iostream>, <vector>, <algorithm>, <cstdlib>, <ctime>
+Compiler: g++ or compatible
 
-Installation
+Setup
 
 Clone the repository:  git clone [your-repo-link]
 
 
-Navigate to the project directory:  cd sudoku-solver
+Navigate to the directory:  cd sudoku-solver
 
 
-Compile the code:  g++ -o sudoku main.cpp
+Compile and run:  g++ -o sudoku main.cpp && ./sudoku
 
 
 
 Usage
 
-Run the program:  ./sudoku
+Select input method:
+Random Sudoku: Choose difficulty (1: Easy, 2: Hard).
+Manual Sudoku: Enter cell values (0 for empty).
 
 
-Choose input method:
-1. Random Sudoku: Select difficulty (1: Easy, 2: Hard).
-2. Manual Sudoku: Enter values (0 for empty cells) for each cell.
+View the initial puzzle and its solution in the console.
 
-
-View the initial and solved puzzle in the console.
-
-Example
-Choose Sudoku input method:
-1. Random Sudoku
-2. Manual Sudoku
-Enter choice (1-2): 1
-Select difficulty level:
-1. Easy (30-40 zeros)
-2. Hard (45-55 zeros)
-Enter choice (1-2): 1
-Generating Easy Sudoku puzzle...
-
-Initial Sudoku board:
+Example Output
+Choose input method (1: Random, 2: Manual): 1
+Select difficulty (1: Easy, 2: Hard): 1
+Initial Sudoku:
 5|3|0|0|7|0|0|0|0|
 ...
 Solved Sudoku:
 5|3|4|6|7|8|9|1|2|
 ...
 
-Project Structure
 
-main.cpp: Core implementation with Sudoku, RandomSudoku, and ManualSudoku classes.
-Backtracking algorithm for solving and solution counting.
-Random puzzle generation with uniqueness checks.
- 
 License
-MIT License. See LICENSE for details.
+MIT License
